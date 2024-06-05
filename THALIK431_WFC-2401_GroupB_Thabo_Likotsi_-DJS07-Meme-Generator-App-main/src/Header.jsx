@@ -1,7 +1,16 @@
+/**
+ * @fileoverview Header component for the Meme Generator application.
+ */
+
 // Import the CSS file for styling
 import "./index.css";
 
-// Define the Header component as a functional component
+/**
+ * Header component that displays the header section of the Meme Generator application.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered JSX content of the Header component.
+ */
 export default function Header() {
   // The component's JSX content is returned
   return (
