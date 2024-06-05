@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Main application file that sets up and renders the app components.
+ */
+
 // Import the CSS file for styling
 import "./index.css";
 
@@ -7,7 +11,12 @@ import Header from "./Header.jsx";
 // Import the Meme component
 import Meme from "./Meme.jsx";
 
-// Define the App component as a function
+/**
+ * App component that serves as the root component of the application.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered JSX content of the App component.
+ */
 function App() {
   // The component's JSX content is returned
   return (
