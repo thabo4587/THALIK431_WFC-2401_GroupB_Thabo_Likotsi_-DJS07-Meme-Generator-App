@@ -1,5 +1,11 @@
 import React from "react";
 
+/**
+ * Meme component for generating and displaying memes.
+ * 
+ * @component
+ * @returns {JSX.Element} The rendered JSX content of the Meme component.
+ */
 export default function Meme() {
   // State to hold the meme data (top text, bottom text, and random image URL)
   const [meme, setMeme] = React.useState({
@@ -21,7 +27,9 @@ export default function Meme() {
     getMemes();
   }, []);
 
-  // Function to get a random meme image from the allMemes array
+  /**
+   * Function to get a random meme image from the allMemes array.
+   */
   function getMemeImage() {
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const url = allMemes[randomNumber].url;
@@ -31,7 +39,11 @@ export default function Meme() {
     }));
   }
 
-  // Function to handle changes in the input fields
+  /**
+   * Function to handle changes in the input fields.
+   * 
+   * @param {Object} event - The event object.
+   */
   function handleChange(event) {
     const { name, value } = event.target;
     setMeme((prevMeme) => ({
