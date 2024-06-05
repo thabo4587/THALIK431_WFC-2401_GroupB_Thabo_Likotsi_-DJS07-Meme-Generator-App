@@ -1,3 +1,8 @@
+/**
+ * @fileoverview Entry point for the React application.
+ * This file sets up and renders the root component.
+ */
+
 // Import the React library
 import React from "react";
 
@@ -10,11 +15,13 @@ import App from "./App.jsx";
 // Import the CSS file for styling
 import "./index.css";
 
-// Get the root element from the HTML document
+// Gets the root element from the HTML document
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// Render the App component inside the root element
-// The <React.StrictMode> component is a tool for identifying potential issues in an application
+/**
+ * Render the App component inside the root element.
+ * The <React.StrictMode> component is a tool for identifying potential issues in an application.
+ */
 root.render(
   <React.StrictMode>
     <App />
